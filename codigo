@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mário Prado Celestino Jr. - Graduando em Estatística | Analista de Dados em Formação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #4b79a1, #283e51);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+        
+        /* Estilos para a barra de navegação */
+        nav {
+            background-color: rgba(0, 56, 102, 0.9);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ffb400;
+        }
+        
+        nav .contact-info {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #cce0ff;
+        }
+        
+        /* Estilos para o cabeçalho */
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 80px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: #f0f0f0;
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+        
+        /* Estilos para o conteúdo principal */
+        .container {
+            max-width: 900px;
+            margin: 120px auto 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        
+        /* Espaçamento para corrigir a rolagem */
+        .section {
+            scroll-margin-top: 70px; /* Ajuste conforme a altura da barra de navegação */
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            border-bottom: 2px solid #ffb400;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .section p, .section ul {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify; /* Justifica o texto para alinhamento entre as margens */
+        }
+        
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        
+        /* Estilos para ícones de redes sociais */
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            margin: 0 10px;
+            color: #ffb400;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre-mim">Sobre Mim</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+        </ul>
+        <div class="contact-info">
+            Contato: (27) 99856-5212 | Mario.celestino@edu.ufes.br
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Mário Prado Celestino Jr.</h1>
+        <h2>Graduando em Estatística | Analista de Dados em Formação</h2>
+
+        <div class="section" id="sobre-mim">
+
+            <h2>Sobre Mim</h2>
+            <p id="saudacao"></p>
+            <script>
+                function saudacao() {
+                    var agora = new Date();
+                    var hora = agora.getHours();
+                    var saudacao = "";
+
+                    if (hora >= 0 && hora < 12) {
+                        saudacao = "Bom dia";
+                    } else if (hora >= 12 && hora < 18) {
+                        saudacao = "Boa tarde";
+                    } else {
+                        saudacao = "Boa noite";
+                    }
+
+                    document.getElementById("saudacao").innerText = saudacao + ", meu nome é Mário Prado, tenho 25 anos e estou cursando Estatística na UFES, atualmente no sétimo período. Escolhi essa área por ser nova e ligada à tecnologia, oferecendo sempre novos desafios. Desde pequeno, sempre gostei de desafios lógicos, como sudoku, campo minado e xadrez, o que despertou meu interesse por matemática e programação. Na escola técnica, destaquei-me como o melhor aluno nas turmas de matemática e ganhei uma olimpíada interna no segundo ano.";
+                }
+
+                saudacao();
+            </script>
+            <p>Na programação, encontrei um ambiente onde me sinto à vontade. Aprendi por conta própria, desenvolvendo projetos pessoais. Por exemplo, criei um bot para um jogo que utiliza reconhecimento de imagem e aleatorização para evitar detecção. No entanto, meu foco principal é o tratamento de dados e a criação de modelos. Toda minha experiência profissional tem sido direcionada para esses objetivos. Sou proficiente em Python e R, e também tenho experiência com Stata e Rust. Além disso, trabalhei com Power BI na construção de dashboards interativos.</p>
+            <p>Sou um estatístico em formação com sólida experiência na criação de rotinas ETS e visualizações de dados. Minha habilidade excepcional no reconhecimento de padrões e na resolução de problemas lógicos tem sido crucial no desenvolvimento e aprimoramento de análises estatísticas. Possuo conhecimento avançado em ferramentas essenciais para análise de dados, como R, Python, Excel, Power BI, DAX, SQL e Adobe XD. Minha trajetória profissional reflete um comprometimento contínuo com a excelência e a busca por soluções inovadoras no campo da estatística aplicada. Estou entusiasmado para contribuir com minha expertise e paixão pela análise de dados em ambientes desafiadores.</p>
+            <p>Espero ter a oportunidade de integrar sua empresa, onde eu possa contribuir com valor e continuar meu desenvolvimento profissional. Agradeço pela oportunidade!</p>
+        </div>
+
+        <div class="section" id="experiencia">
+            <h2>Experiência</h2>
+            <p><strong>FINDES / Estagiário</strong> - 03/2022 – 02/2023, Vitória, ES</p>
+            <ul>
+                <li>Desenvolver scripts em R para obter, tratar e atualizar bases de dados.</li>
+                <li>Criar visuais utilizando Power BI e Adobe XD.</li>
+                <li>Gerenciar a rotina de atualização das bases de dados.</li>
+            </ul>
+
+            <p><strong>SEFAZ / Estagiário</strong> - 2018 - 2019, Vitória, ES</p>
+            <ul>
+                <li>Desenvolver visuais interativos com Power BI.</li>
+                <li>Realizar relatórios de gastos.</li>
+                <li>Criar e atualizar indicadores.</li>
+                <li>Tratar dados econômicos.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="educacao">
+            <h2>Educação</h2>
+            <p><strong>UFES / Cursando 7º Período em Estatística</strong> - ATUALMENTE, Vitória, ES</p>
+            <ul>
+                <li>Participou de oficinas de Machine Learning.</li>
+                <li>Realizou monitorias de Probabilidade.</li>
+                <li>Fez matérias optativas como: Algoritmos Numéricos, Demografia, Programação, etc.</li>
+            </ul>
+
+            <p><strong>CEDTEC / Técnico em Elétrica</strong> - 2016, Serra, ES</p>
+            <ul>
+                <li>Experiência prática com eletrônica e desenvolvimento de projetos.</li>
+                <li>Vencedor da olimpíada de matemática da instituição em 2015.</li>
+            </ul>
+        </div>
+
+        <div class="section" id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python, R, Stata, Rust</li>
+                <li>Power BI, Excel, DAX</li>
+                <li>Modelagem Estatística e Machine Learning</li>
+                <li>SQL, Adobe XD</li>
+                <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+            </ul>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/m%C3%A1rio-prado-92906b25a/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
